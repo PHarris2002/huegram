@@ -18,7 +18,10 @@ const Post = (props: Props) => {
     >
       <p className="text-white text-2xl opacity-80">{props.post.color}</p>
 
-      <p>{props.post.username}</p>
+      <div className="bg-black text-white flex w-full justify-center p-4 rounded-b-2xl">
+        <p>{props.post.username}</p>
+      </div>
+
     </div>
   );
 };
