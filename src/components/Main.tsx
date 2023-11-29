@@ -1,14 +1,13 @@
-import React from 'react'
-import Post from './Post'
+import Hue from './Hue'
 import PostHue from './PostHue'
 
-interface PostObject {
+interface HueObject {
     color: string,
     username: string,
     likes: number
 }
 interface Props {
-    posts: PostObject[],
+    hues: HueObject[],
     addHue: (color:string) => void
 }
 
@@ -18,9 +17,12 @@ const Main = (props : Props) => {
       
       <PostHue addHue={props.addHue} />
 
-        {props.posts.map(  (post) => ( 
+        <PostHue addHue={props.addHue}/>
+
+
+        {props.hues.map(  (hue) => ( 
             
-            <Post post={post}/>
+            <Hue hue={hue}/>
        ))}
 
         
