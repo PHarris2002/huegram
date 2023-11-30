@@ -13,17 +13,25 @@ interface Props {
 
 const Main = (props : Props) => {
   return (
-    <div className='flex flex-wrap w-full justify-center gap-8 overflow-y-auto'>
+    <div className='flex flex-col gap-y-16'>
+      <div className='flex justify-between mx-10'>
+        <h1>
+          HUEGRAM
+        </h1>
+        <div className='flex'>
+          <input className='bg-transparent border-2 rounded-full text-lg text-white px-4 py-2' type="text" name="search" id="search"/>
+        </div>
+        
+      </div>
       
-      <PostHue addHue={props.addHue} />
+      <div className=""><PostHue addHue={props.addHue} /></div>
 
-        <PostHue addHue={props.addHue}/>
-
-
-        {props.hues.map(  (hue) => ( 
-            
-            <Hue hue={hue}/>
-       ))}
+      <div className='flex flex-wrap w-full justify-center gap-8 overflow-y-auto'>
+          {props.hues.map(  (hue) => ( 
+              
+              <Hue hue={hue}/>
+        ))}
+       </div>
 
         
 
