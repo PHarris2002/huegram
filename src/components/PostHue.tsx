@@ -11,7 +11,7 @@ const PostHue = (props:Props) => {
     const[color, setColor] = useState('')
 
   return (
-    <div className='flex md:flex-row justify-center flex-col py-4 mx-10 gap-x-10'>
+    <div className='flex md:flex-row justify-center flex-col py-4 mx-10 gap-10'>
 
         <div className='flex flex-col items-center self-center gap-y-12'>
             <input className='w-96 h-32 text-2xl p-2' type="text" name="hue" id="hue" onChange={ (event) => setColor(event.target.value) } />

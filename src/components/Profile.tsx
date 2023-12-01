@@ -12,12 +12,12 @@ const Profile = () => {
         </div>
 
           <div>
-            <h1 className='text-5xl'>86</h1>
+            <h1 className='text-5xl text-center'>86</h1>
             <h2>Likes Received</h2>
           </div>
 
           <div>
-            <h1 className='text-5xl'>47</h1>
+            <h1 className='text-5xl text-center'>47</h1>
             <h2>Hues Posted</h2>
           </div>
 
