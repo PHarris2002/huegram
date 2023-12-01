@@ -72,15 +72,21 @@ const Profile = () => {
             </div>
           </div>
         </div>
-
+        
+        <div className='flex items-end gap-x-2'>
+          <i className='fa-regular fa-heart'></i>
           <div>
-            <h1 className='text-5xl text-center'>86</h1>
+            <h1 className='text-5xl'>86</h1>
             <h2>Likes Received</h2>
           </div>
+        </div>
 
-          <div>
-            <h1 className='text-5xl text-center'>47</h1>
-            <h2>Hues Posted</h2>
+          <div className='flex items-end gap-x-2'>
+            <p className='font-bold'>#</p>
+            <div>
+              <h1 className='text-5xl'>47</h1>
+              <h2>Hues Posted</h2>
+            </div>
           </div>
 
 
