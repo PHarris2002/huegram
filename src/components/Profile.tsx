@@ -5,13 +5,12 @@ const Profile = () => {
   return (
     <div className='flex flex-col border-2 p-8 items-center justify-evenly text-white'>
 
-        <h1>@kodom</h1>
-
         {/* <div className="flex w-1/2">
             <img src={kaylee} alt="" className='rounded-full'/>
         </div> */}
 
         <div className="saved-hues-grid flex flex-col">
+          <h1 className="text-center">@kodom</h1>
           <div className="flex">
             <div className="border-y-2 border-l-2 h-5 w-5">
             </div>
