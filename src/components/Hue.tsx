@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 
 interface HueObject {
   color: string;
@@ -13,7 +13,7 @@ interface Props {
 const Hue = (props: Props) => {
   return (
     <div
-      className="flex flex-col h-64 aspect-square rounded-3xl text-center justify-between items-center"
+      className="flex flex-col max-h-full h-64 aspect-square rounded-3xl text-center justify-between items-center"
       style={{ backgroundColor: props.hue.color }}
     >
       <p className="text-white text-2xl opacity-80">{props.hue.color}</p>

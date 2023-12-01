@@ -1,5 +1,5 @@
-import React from 'react'
-import kaylee from '/kaylee.jpg'
+// import React from 'react'
+// import kaylee from '/kaylee.jpg'
 
 const Profile = () => {
   return (
@@ -7,8 +7,71 @@ const Profile = () => {
 
         <h1>@kodom</h1>
 
-        <div className="flex w-1/2">
+        {/* <div className="flex w-1/2">
             <img src={kaylee} alt="" className='rounded-full'/>
+        </div> */}
+
+        <div className="saved-hues-grid flex flex-col">
+          <div className="flex">
+            <div className="border-y-2 border-l-2 h-5 w-5">
+            </div>
+            <div className="border-y-2 border-l-2 h-5 w-5">
+            </div>
+            <div className="border-y-2 border-l-2 h-5 w-5">
+            </div>
+            <div className="border-y-2 border-l-2 h-5 w-5">
+            </div>
+            <div className="border-2 h-5 w-5">
+            </div>
+          </div>
+          <div className="flex">
+            <div className="border-b-2 border-l-2 h-5 w-5">
+            </div>
+            <div className="border-b-2 border-l-2 h-5 w-5">
+            </div>
+            <div className="border-b-2 border-l-2 h-5 w-5">
+            </div>
+            <div className="border-b-2 border-l-2 h-5 w-5">
+            </div>
+            <div className="border-x-2 border-b-2 h-5 w-5">
+            </div>
+          </div>
+          <div className="flex">
+            <div className="border-b-2 border-l-2 h-5 w-5">
+            </div>
+            <div className="border-b-2 border-l-2 h-5 w-5">
+            </div>
+            <div className="border-b-2 border-l-2 h-5 w-5">
+            </div>
+            <div className="border-b-2 border-l-2 h-5 w-5">
+            </div>
+            <div className="border-x-2 border-b-2 h-5 w-5">
+            </div>
+          </div>
+          <div className="flex">
+            <div className="border-b-2 border-l-2 h-5 w-5">
+            </div>
+            <div className="border-b-2 border-l-2 h-5 w-5">
+            </div>
+            <div className="border-b-2 border-l-2 h-5 w-5">
+            </div>
+            <div className="border-b-2 border-l-2 h-5 w-5">
+            </div>
+            <div className="border-x-2 border-b-2 h-5 w-5">
+            </div>
+          </div>
+          <div className="flex">
+            <div className="border-b-2 border-l-2 h-5 w-5">
+            </div>
+            <div className="border-b-2 border-l-2 h-5 w-5">
+            </div>
+            <div className="border-b-2 border-l-2 h-5 w-5">
+            </div>
+            <div className="border-b-2 border-l-2 h-5 w-5">
+            </div>
+            <div className="border-2 h-5 w-5">
+            </div>
+          </div>
         </div>
 
           <div>
