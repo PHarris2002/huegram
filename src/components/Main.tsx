@@ -24,7 +24,7 @@ const Main = (props : Props) => {
         </div>
       </div>
       
-      <div className=" bg-slate-900 border-2 rounded-xl w-11/12 self-center"><PostHue addHue={props.addHue} /></div>
+      <PostHue addHue={props.addHue} />
 
       <div className='flex flex-wrap w-full justify-center gap-8 overflow-y-auto'>
           {props.hues.map(  (hue) => ( 
