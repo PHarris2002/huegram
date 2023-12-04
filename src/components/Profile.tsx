@@ -10,7 +10,7 @@ const Profile = () => {
         </div> */}
 
         <div className="saved-hues-grid flex flex-col">
-          <h1 className="text-center">@kodom</h1>
+          <h1>@kodom</h1>
           <div className="flex">
             <div className="border-y-2 border-l-2 h-5 w-5">
             </div>
