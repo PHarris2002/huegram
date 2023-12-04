@@ -10,6 +10,7 @@ interface Props {
   post: Post;
 }
 
+
 const Post = (props: Props) => {
   return (
     <div
@@ -25,6 +26,7 @@ const Post = (props: Props) => {
       </div>
 
     </div>
+    
   );
 };
 
