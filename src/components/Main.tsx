@@ -24,14 +24,19 @@ const Main = (props : Props) => {
         </div>
       </div>
       
-      <PostHue addHue={props.addHue} />
+      <div className='flex flex-col justify-center lg:flex-row'>
+        <div className='mb-8'>
+          <PostHue addHue={props.addHue} />
+        </div>
 
-      <div className='flex flex-wrap w-full justify-center gap-8 overflow-y-auto'>
-          {props.hues.map(  (hue) => ( 
-              
-              <Hue hue={hue}/>
-        ))}
+        <div className='flex flex-wrap lg:justify-end lg:w-2/3 gap-8'>
+            {props.hues.map(  (hue) => ( 
+                
+                <Hue hue={hue}/>
+          ))}
+        </div>
       </div>
+
 
         
 

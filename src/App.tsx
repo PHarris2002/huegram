@@ -29,10 +29,12 @@ function App() {
   }
 
   return (
-    <div className='flex bg-slate-800 h-screen gap-x-10'>
+    <div className='flex bg-gradient-to-b from-slate-800 to-slate-950 h-screen gap-x-10'>
       {/* <Menu /> */}
 
-      <Main hues={hues} addHue = {addNewHue} />
+      <div className='overflow-y-auto'>
+        <Main hues={hues} addHue = {addNewHue} />
+      </div>
 
       <Profile />
     </div>
