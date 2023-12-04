@@ -23,7 +23,10 @@ const Hue = (props: Props) => {
     </div>  
 
       <div className="bg-black text-white flex w-full text-center justify-center p-4 rounded-b-2xl">
-        <p className="text-xl">{props.hue.username}</p>
+        <p className="text-xl grow">{props.hue.username}</p>
+        <div className="flex items-center gap-1">
+          <p>{props.hue.likes}</p><i className='fa-regular fa-heart' style={{color: props.hue.color}}></i>
+        </div>
 
       </div>
     </div>
