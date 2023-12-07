@@ -9,48 +9,51 @@ const Profile = () => {
             <img src={kaylee} alt="" className='rounded-full'/>
         </div> */}
 
-        <div className="saved-hues-grid flex flex-col">
+        <div>
           <h1>@kodom</h1>
-          <div className="flex">
-            <div className="border-y-2 border-l-2 h-5 w-5 bg-red-600">
-            </div>
-            <div className="border-y-2 border-l-2 h-5 w-5 bg-amber-500">
-            </div>
-            <div className="border-y-2 border-l-2 h-5 w-5 bg-green-500">
-            </div>
-            <div className="border-y-2 border-x-2 h-5 w-5 bg-teal-700">
-            </div>
+          <div className="border-2 saved-hues-grid grid grid-cols-4 grid-rows-4 w-full aspect-square">
+
+              <div className=" bg-red-600">
+              </div>
+              <div className=" bg-amber-500">
+              </div>
+              <div className=" bg-green-500">
+              </div>
+              <div className=" bg-teal-700">
+              </div>
+
+
+              <div className=" bg-purple-500">
+              </div>
+              <div className=" bg-teal-500">
+              </div>
+              <div className="">
+              </div>
+              <div className="">
+              </div>
+
+
+              <div className="">
+              </div>
+              <div className="">
+              </div>
+              <div className="">
+              </div>
+              <div className="">
+              </div>
+
+
+              <div className="">
+              </div>
+              <div className="">
+              </div>
+              <div className="">
+              </div>
+              <div className="">
+              </div>
+              
           </div>
-          <div className="flex">
-            <div className="border-b-2 border-l-2 h-5 w-5 bg-purple-500">
-            </div>
-            <div className="border-b-2 border-l-2 h-5 w-5 bg-teal-500">
-            </div>
-            <div className="border-b-2 border-l-2 h-5 w-5">
-            </div>
-            <div className="border-b-2 border-x-2 h-5 w-5">
-            </div>
-          </div>
-          <div className="flex">
-            <div className="border-b-2 border-l-2 h-5 w-5">
-            </div>
-            <div className="border-b-2 border-l-2 h-5 w-5">
-            </div>
-            <div className="border-b-2 border-l-2 h-5 w-5">
-            </div>
-            <div className="border-b-2 border-x-2 h-5 w-5">
-            </div>
-          </div>
-          <div className="flex">
-            <div className="border-b-2 border-l-2 h-5 w-5">
-            </div>
-            <div className="border-b-2 border-l-2 h-5 w-5">
-            </div>
-            <div className="border-b-2 border-l-2 h-5 w-5">
-            </div>
-            <div className="border-b-2 border-x-2 h-5 w-5">
-            </div>
-          </div>
+
         </div>
         
         <div className='flex items-end gap-x-2'>
