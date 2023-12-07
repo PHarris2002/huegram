@@ -1,14 +1,12 @@
 import Hue from './Hue'
 import PostHue from './PostHue'
 
-interface HueObject {
-    color: string,
-    username: string,
-    likes: number
-}
+import HueObject from "../HueObject"
+
 interface Props {
     hues: HueObject[],
-    addHue: (color:string) => void
+    addHue: (color:string) => void,
+    toggleLike: (id?:number)=> void
 }
 
 const Main = (props : Props) => {
@@ -32,7 +30,7 @@ const Main = (props : Props) => {
         <div className='flex flex-wrap lg:justify-end lg:w-2/3 gap-8'>
             {props.hues.map(  (hue) => ( 
                 
-                <Hue hue={hue}/>
+                <Hue hue={hue} toggleLike={props.toggleLike}/>
           ))}
         </div>
       </div>

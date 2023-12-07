@@ -28,12 +28,24 @@ function App() {
       setHues( [newHue, ...hues] );
   }
 
+  const toggleLikeForHue = (id?:number) => {
+    const newHues = [...hues]
+    const hue = newHues.find(h => h.id == id)
+    if (hue){
+      hue.isLiked = !hue?.isLiked;
+
+      hue.isLiked ? hue.likes++ : hue.likes--;
+    }
+    
+    setHues(newHues)
+  }
+
   return (
     <div className='flex bg-gradient-to-b from-slate-800 to-slate-950 h-screen gap-x-10'>
       {/* <Menu /> */}
 
       <div className='overflow-y-auto'>
-        <Main hues={hues} addHue = {addNewHue} />
+        <Main hues={hues} addHue = {addNewHue} toggleLike = {toggleLikeForHue} />
       </div>
 
       <Profile />

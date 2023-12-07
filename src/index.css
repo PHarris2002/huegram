@@ -5,3 +5,17 @@
 body {
     font-family: 'Roboto Condensed', sans-serif;
 }
+
+.btn {
+    transform: translateZ(0);
+    transition-duration: 0.1s;
+    transition-property: transform; 
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
