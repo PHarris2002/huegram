@@ -18,7 +18,7 @@ const PostHue = (props:Props) => {
                 <a href="#" onClick={ () => props.addHue(color)  } className='flex justify-center items-center btn w-3/4 h-1/2 bg-gradient-to-r from-red-600 via-amber-500 to-violet-400 text-white text-2xl font-bold text-center rounded-md'><div>Post</div></a>
         </div>
 
-        <div className="self-center text-xl text-white h-5/6"><Hue hue={ {color, username:"kaylee", likes:0, isLiked: false}} /></div>
+        <div className="self-center text-xl text-white h-5/6"><Hue hue={{id:20, color, username:"kaylee", likes:0, isLiked: false}} /></div>
 
     </div>
   )
