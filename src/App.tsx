@@ -9,9 +9,9 @@ function App() {
   const [hues, setHues] = useState<HueObject[]>([]);
 
   const [currentUser] = useState({
-    username: "kavery",
-    likes: 58,
-    hues: [ {id:36, color:'#ffa510', username:"kavery", likes: 15}]
+    username: "PHarris",
+    likes: 0,
+    hues: [ {id: 1000, color:'#ffa510', username:"PHarris", likes: 15}]
   });
 
   useEffect(()=>
@@ -23,8 +23,7 @@ function App() {
 
   const addNewHue = (color:string ) => 
   {
-      console.log(color)
-      const newHue = {color, username: currentUser.username, id: length+1 , likes:0, isLiked: false};
+      const newHue = {color, username: currentUser.username, id: hues.length+1, likes:0, isLiked: false};
       setHues( [newHue, ...hues] );
   }
 
@@ -48,7 +47,7 @@ function App() {
         <Main hues={hues} addHue = {addNewHue} toggleLike = {toggleLikeForHue} />
       </div>
 
-      <Profile />
+      <Profile hues={hues}/>
     </div>
   )
 }

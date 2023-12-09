@@ -23,8 +23,8 @@ const Hue = (props: Props) => {
     <div className="flex w-full px-5 py-2 justify-between items-center text-white">
       <div></div>
       <p className="text-2xl opacity-80" style={{color: text_color}}>{props.hue.color}</p>
-      {props.hue.isLiked && <i className='fa-solid fa-heart text-4xl'></i>}
-      {!props.hue.isLiked && <i className='fa-regular fa-heart text-4xl'></i>}
+      {props.hue.isLiked && <i style={{color: text_color}} className='fa-solid fa-heart text-4xl'></i>}
+      {!props.hue.isLiked && <i style={{color: text_color}} className='fa-regular fa-heart text-4xl'></i>}
     </div>  
 
       <div className="bg-black text-white flex w-full text-center justify-center p-4 rounded-b-2xl">
