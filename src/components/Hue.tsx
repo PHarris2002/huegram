@@ -17,7 +17,7 @@ const Hue = (props: Props) => {
 
   return (
     <div onClick={()=> props.toggleLike?.(props.hue.id)}
-      className="btn flex flex-col max-h-full h-64 aspect-square rounded-3xl text-center justify-between items-center"
+      className="btn cursor-pointer flex flex-col max-h-full h-64 aspect-square rounded-3xl text-center justify-between items-center"
       style={{ backgroundColor: props.hue.color }}
     >
     <div className="flex w-full px-5 py-2 justify-between items-center text-white">
