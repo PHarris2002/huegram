@@ -27,7 +27,7 @@ const Main = (props : Props) => {
           <PostHue addHue={props.addHue} />
         </div>
 
-        <div className='flex flex-wrap lg:justify-end lg:w-2/3 gap-8'>
+        <div className='flex flex-wrap justify-center xl:justify-end lg:w-2/3 gap-8'>
             {props.hues.map(  (hue) => ( 
                 
                 <Hue hue={hue} toggleLike={props.toggleLike}/>
