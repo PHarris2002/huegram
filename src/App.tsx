@@ -44,7 +44,7 @@ function App() {
     <div className='flex bg-gradient-to-b from-slate-800 to-slate-950 h-screen gap-x-10'>
       {/* <Menu /> */}
 
-      <div className='overflow-y-auto'>
+      <div className='w-11/12 overflow-y-auto'>
         <Main hues={hues} addHue = {addNewHue} toggleLike = {toggleLikeForHue} />
       </div>
 
