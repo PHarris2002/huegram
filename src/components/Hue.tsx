@@ -16,7 +16,7 @@ const Hue = (props: Props) => {
   const text_color = hue_intensity > 186 ? "#000000" : "#FFFFFF";
 
   return (
-    <div onDoubleClick={()=> props.toggleLike?.(props.hue.id)}
+    <div onClick={()=> props.toggleLike?.(props.hue.id)}
       className="btn flex flex-col max-h-full h-64 aspect-square rounded-3xl text-center justify-between items-center"
       style={{ backgroundColor: props.hue.color }}
     >
